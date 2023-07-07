@@ -1,4 +1,4 @@
-import 'package:cookbook/scratcher/scratcher_advanced.dart';
+import 'package:cookbook/listviews/listview_scroll_navigation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: false,
       ),
-      home: const AdvancedScreen(),
+      home: ListViewScrollNavigation(),
     );
   }
 }
