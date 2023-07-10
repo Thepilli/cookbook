@@ -1,4 +1,4 @@
-import 'package:cookbook/listviews/listview_scroll_navigation.dart';
+import 'package:cookbook/stepper_widget/stepper_home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: false,
       ),
-      home: ListViewScrollNavigation(),
+      home: const StepperHomePage(),
     );
   }
 }
