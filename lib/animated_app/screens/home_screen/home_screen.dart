@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 20.0, top: 50),
-                child: Text("Courses", style: appstyle(40, Colors.black, FontWeight.w600)),
+                child: Text("Courses", style: appstyle(40, Colors.white, FontWeight.w600)),
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-                child: Text("Recent", style: appstyle(30, Colors.black, FontWeight.w600)),
+                child: Text("Recent", style: appstyle(30, Colors.white, FontWeight.w600)),
               ),
               ...recentCourses.map(
                 (course) => Padding(

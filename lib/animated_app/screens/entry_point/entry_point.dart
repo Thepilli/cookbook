@@ -4,7 +4,7 @@ import 'package:cookbook/animated_app/screens/home_screen/home_screen.dart';
 import 'package:cookbook/animated_app/screens/onboarding_screen/constants.dart';
 import 'package:cookbook/animated_app/screens/entry_point/components/animated_bar.dart';
 import 'package:cookbook/animated_app/models/rive_assets.dart';
-import 'package:cookbook/animated_app/screens/onboarding_screen/utils/rive_utils.dart';
+import 'package:cookbook/animated_app/utils/rive_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 

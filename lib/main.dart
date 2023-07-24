@@ -1,8 +1,14 @@
-import 'package:cookbook/animated_app/screens/onboarding_screen/onboarding_screen.dart';
+import 'package:cookbook/filter_widget/filter_widget.dart';
+import 'package:cookbook/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(const MyApp());
 }
 
@@ -13,14 +19,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     debugPrint(MediaQuery.of(context).size.toString());
     return ScreenUtilInit(
-        designSize: const Size(430.0, 932.0),
+        designSize: const Size(392.7, 781.1),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context, child) {
           return MaterialApp(
             title: 'Flutter CookBook',
             theme: ThemeData(
-              scaffoldBackgroundColor: const Color.fromARGB(255, 238, 223, 197),
+              scaffoldBackgroundColor: Colors.transparent,
               primarySwatch: Colors.blue,
               inputDecorationTheme: const InputDecorationTheme(
                 filled: true,
@@ -32,7 +38,7 @@ class MyApp extends StatelessWidget {
                 errorBorder: defaultInputBorder,
               ),
             ),
-            home: const OnboardingScreen(),
+            home: const FilterWidget(),
           );
         });
   }
