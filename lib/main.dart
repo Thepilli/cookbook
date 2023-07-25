@@ -1,6 +1,4 @@
-import 'package:cookbook/filter_widget/filter_widget.dart';
-import 'package:cookbook/firebase_options.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:cookbook/animated_app/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -38,7 +36,7 @@ class MyApp extends StatelessWidget {
                 errorBorder: defaultInputBorder,
               ),
             ),
-            home: const FilterWidget(),
+            home: const OnboardingScreen(),
           );
         });
   }
