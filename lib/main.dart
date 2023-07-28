@@ -1,6 +1,9 @@
-import 'package:cookbook/animated_app/screens/onboarding_screen/onboarding_screen.dart';
+import 'package:cookbook/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'flutter_animated/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +27,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             title: 'Flutter CookBook',
             theme: ThemeData(
-              scaffoldBackgroundColor: Colors.transparent,
+              scaffoldBackgroundColor: Colors.yellow,
               primarySwatch: Colors.blue,
               inputDecorationTheme: const InputDecorationTheme(
                 filled: true,
@@ -36,7 +39,7 @@ class MyApp extends StatelessWidget {
                 errorBorder: defaultInputBorder,
               ),
             ),
-            home: const OnboardingScreen(),
+            home: const Home(),
           );
         });
   }
