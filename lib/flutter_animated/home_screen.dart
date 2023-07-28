@@ -13,6 +13,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.amberAccent,
         body: Container(
             padding: const EdgeInsets.all(20),
             decoration: const BoxDecoration(

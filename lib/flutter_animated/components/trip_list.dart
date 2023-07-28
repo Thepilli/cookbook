@@ -1,4 +1,4 @@
-import 'package:cookbook/flutter_animated/components/details.dart';
+import 'package:cookbook/flutter_animated/detail_screen.dart';
 import 'package:cookbook/flutter_animated/components/trip_model.dart';
 import 'package:flutter/material.dart';
 

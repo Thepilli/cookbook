@@ -11,6 +11,7 @@ class ListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(title: const Text('ListView builder')),
       body: ListView.builder(
         itemCount: users.length,

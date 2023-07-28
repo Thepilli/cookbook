@@ -9,6 +9,7 @@ class Details extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amberAccent,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
