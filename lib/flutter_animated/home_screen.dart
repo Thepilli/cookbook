@@ -18,13 +18,16 @@ class _HomeState extends State<Home> {
             padding: const EdgeInsets.all(20),
             decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/flutter_animated_images/bg.png"), fit: BoxFit.fitWidth, alignment: Alignment.topLeft),
+                  image: AssetImage("assets/flutter_animated_images/bg.png"),
+                  fit: BoxFit.fitWidth,
+                  alignment: Alignment.topLeft),
             ),
             child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 30),
-                SizedBox(height: 160, child: ScreenTitle(text: 'My animated title')),
+                SizedBox(
+                    height: 160, child: ScreenTitle(text: 'My animated title')),
                 Expanded(child: TripList())
 
                 //Sandbox(),

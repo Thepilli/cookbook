@@ -37,7 +37,8 @@ class _LiquidPullRefreshState extends State<LiquidPullRefresh> {
             const Duration(milliseconds: 500),
             () {
               setState(() {
-                _data.add(RefreshData('${_data.length}', 'Refreshed at ${createdAt.hour}:${createdAt.minute}'));
+                _data.add(RefreshData('${_data.length}',
+                    'Refreshed at ${createdAt.hour}:${createdAt.minute}'));
               });
             },
           );

@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 TextStyle appstyle(double size, Color color, FontWeight fw) {
   return GoogleFonts.poppins(fontSize: size.sp, color: color, fontWeight: fw);
 }
+
 /// +++ *** +++ *** +++ *** +++ *** +++ *** +++ *** +++ **
 /// ScreenUtilInit needs  wrapped around MyApp in main ///
 /// +++ *** +++ *** +++ *** +++ *** +++ *** +++ *** +++ **

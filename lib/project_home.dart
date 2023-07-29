@@ -1,6 +1,7 @@
 import 'package:cookbook/animated_app/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:cookbook/dialog_boxes/dialog_box.dart';
 import 'package:cookbook/filter_widget/filter_widget.dart';
+import 'package:cookbook/firebase_counter/firebase_counter.dart';
 import 'package:cookbook/liquid_pull_refresh/liquid_pull_refresh.dart';
 import 'package:cookbook/listviews/listview_builder.dart';
 import 'package:cookbook/opening_letter/opening_letter.dart';
@@ -147,6 +148,19 @@ class ProjectHome extends StatelessWidget {
                       ));
                 },
                 child: const Text('Stepper widget'),
+              ),
+            ),
+            Container(
+              child: MaterialButton(
+                color: Colors.pinkAccent,
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CounterPage(),
+                      ));
+                },
+                child: const Text('Counter Page with firestore'),
               ),
             ),
           ],

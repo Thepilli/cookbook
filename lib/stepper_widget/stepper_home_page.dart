@@ -14,7 +14,9 @@ class _StepperHomePageState extends State<StepperHomePage> {
         Step(
           title: const Text('Step 1'),
           isActive: _currentStep >= 0,
-          state: _currentStep <= 0 ? StepState.editing : StepState.complete, // StepState icon
+          state: _currentStep <= 0
+              ? StepState.editing
+              : StepState.complete, // StepState icon
           content: const Column(
             children: [
               TextField(

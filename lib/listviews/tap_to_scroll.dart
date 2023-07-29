@@ -36,7 +36,8 @@ class _TapToScrollState extends State<TapToScroll> {
   }
 
   void _onNumberTap(int index) {
-    _scrollController.animateTo(index * _containerHeight, duration: const Duration(seconds: 1), curve: Curves.decelerate);
+    _scrollController.animateTo(index * _containerHeight,
+        duration: const Duration(seconds: 1), curve: Curves.decelerate);
     setState(() {
       _scrollIndex = index;
     });
@@ -67,7 +68,9 @@ class _TapToScrollState extends State<TapToScroll> {
                       height: 50,
                       margin: const EdgeInsets.all(20),
                       alignment: Alignment.center,
-                      decoration: index == _scrollIndex ? BoxDecoration(border: Border.all()) : null,
+                      decoration: index == _scrollIndex
+                          ? BoxDecoration(border: Border.all())
+                          : null,
                       child: Text('${index + 1}'),
                     ),
                   );
@@ -83,7 +86,8 @@ class _TapToScrollState extends State<TapToScroll> {
                     height: _containerHeight,
                     color: _colors[index],
                     alignment: Alignment.center,
-                    child: Text('${index + 1}', style: const TextStyle(fontSize: 30)),
+                    child: Text('${index + 1}',
+                        style: const TextStyle(fontSize: 30)),
                   );
                 },
               ),

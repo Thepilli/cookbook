@@ -18,7 +18,8 @@ class ListViewScrollNavigation extends StatelessWidget {
   final double _containerHeight = 300;
   final ScrollController _scrollController = ScrollController();
   void _scrollToTap(int index) {
-    _scrollController.animateTo(index * _containerHeight, duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
+    _scrollController.animateTo(index * _containerHeight,
+        duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
   }
 
   @override

@@ -89,7 +89,8 @@ class _BasicScreenState extends State<BasicScreen> {
                       brushSize: brushSize,
                       threshold: 30,
                       image: Image.asset('assets/background.jpg'),
-                      onThreshold: () => setState(() => thresholdReached = true),
+                      onThreshold: () =>
+                          setState(() => thresholdReached = true),
                       onChange: (value) {
                         setState(() {
                           progress = value;

@@ -52,7 +52,8 @@ class CourseCard extends StatelessWidget {
                             offset: Offset((-10 * index).toDouble(), 0),
                             child: CircleAvatar(
                               radius: 20,
-                              backgroundImage: AssetImage('assets/animated_app/avaters/Avatar ${index + 1}.jpg'),
+                              backgroundImage: AssetImage(
+                                  'assets/animated_app/avaters/Avatar ${index + 1}.jpg'),
                             ),
                           )),
                 )

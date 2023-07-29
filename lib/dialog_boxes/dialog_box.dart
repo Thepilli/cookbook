@@ -27,7 +27,8 @@ class AwesomeDialogBox extends StatelessWidget {
                     dialogType: DialogType.infoReverse, // reverse = normal
                     borderSide: const BorderSide(color: Colors.pink, width: 2),
                     width: 300,
-                    buttonsBorderRadius: const BorderRadius.all(Radius.circular(15)),
+                    buttonsBorderRadius:
+                        const BorderRadius.all(Radius.circular(15)),
                     dismissOnTouchOutside: true,
                     dismissOnBackKeyPress: false,
                     onDismissCallback: (type) {
@@ -103,7 +104,8 @@ class AwesomeDialogBox extends StatelessWidget {
                     showCloseIcon: true,
                     closeIcon: const Icon(Icons.close_fullscreen_outlined),
                     title: 'Warning',
-                    desc: 'Dialog description here..................................................',
+                    desc:
+                        'Dialog description here..................................................',
                     btnCancelOnPress: () {},
                     onDismissCallback: (type) {
                       debugPrint('Dialog Dismiss from callback $type');
@@ -125,7 +127,8 @@ class AwesomeDialogBox extends StatelessWidget {
                     animType: AnimType.rightSlide,
                     headerAnimationLoop: false,
                     title: 'Error',
-                    desc: 'Dialog description here..................................................',
+                    desc:
+                        'Dialog description here..................................................',
                     btnOkOnPress: () {},
                     btnOkIcon: Icons.cancel,
                     btnOkColor: Colors.red,
@@ -145,7 +148,8 @@ class AwesomeDialogBox extends StatelessWidget {
                     animType: AnimType.rightSlide,
                     headerAnimationLoop: true,
                     title: 'Question',
-                    desc: 'Dialog description here..................................................',
+                    desc:
+                        'Dialog description here..................................................',
                     btnOkOnPress: () {},
                   ).show();
                 },
@@ -164,7 +168,8 @@ class AwesomeDialogBox extends StatelessWidget {
                     dialogType: DialogType.success,
                     showCloseIcon: true,
                     title: 'Succes',
-                    desc: 'Dialog description here..................................................',
+                    desc:
+                        'Dialog description here..................................................',
                     btnOkOnPress: () {
                       debugPrint('OnClcik');
                     },
@@ -187,7 +192,8 @@ class AwesomeDialogBox extends StatelessWidget {
                     headerAnimationLoop: false,
                     dialogType: DialogType.noHeader,
                     title: 'No Header',
-                    desc: 'Dialog description here..................................................',
+                    desc:
+                        'Dialog description here..................................................',
                     btnOkOnPress: () {
                       debugPrint('OnClcik');
                     },

@@ -12,7 +12,10 @@ class LayouBreakdown extends StatelessWidget {
       body: ListView(
         children: [
           //image
-          FadeAnimation(delay: 2, child: Image(image: AssetImage('assets/images/layout_breakdown.png'))),
+          FadeAnimation(
+              delay: 2,
+              child: Image(
+                  image: AssetImage('assets/images/layout_breakdown.png'))),
           //title row
           Container(
             padding: EdgeInsets.all(30),
@@ -39,9 +42,12 @@ class LayouBreakdown extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                _buildButtonColumn(color: Colors.amber, label: 'CALL', iconName: Icons.phone),
-                _buildButtonColumn(color: Colors.amber, label: 'ROUTE', iconName: Icons.map),
-                _buildButtonColumn(color: Colors.amber, label: 'SHARE', iconName: Icons.share),
+                _buildButtonColumn(
+                    color: Colors.amber, label: 'CALL', iconName: Icons.phone),
+                _buildButtonColumn(
+                    color: Colors.amber, label: 'ROUTE', iconName: Icons.map),
+                _buildButtonColumn(
+                    color: Colors.amber, label: 'SHARE', iconName: Icons.share),
               ],
             ),
           ),

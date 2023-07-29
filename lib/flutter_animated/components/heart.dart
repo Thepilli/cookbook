@@ -12,9 +12,11 @@ class Heart extends StatefulWidget {
 class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
   //emits a value between 0-1 every second
   late AnimationController controller;
-  late Animation<Color?> colorAnimation; //to animate a color, a 0-1 values are not sufficient,therefore we need aditional object
+  late Animation<Color?>
+      colorAnimation; //to animate a color, a 0-1 values are not sufficient,therefore we need aditional object
   late Animation<double> sizeAnimation;
-  late Animation<double> curve; //to animate a color, a 0-1 values are not sufficient,therefore we need aditional object
+  late Animation<double>
+      curve; //to animate a color, a 0-1 values are not sufficient,therefore we need aditional object
   bool isFav = false;
 
   @override
@@ -31,15 +33,19 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
     colorAnimation = ColorTween(
       begin: Colors.grey[400],
       end: Colors.red,
-    ).animate(controller); //allows to get values between grey and red, instead of 0-1
+    ).animate(
+        controller); //allows to get values between grey and red, instead of 0-1
 
-    sizeAnimation = TweenSequence(//allows us to use multiple tweens at the same time
-        <TweenSequenceItem<double>>[
+    sizeAnimation =
+        TweenSequence(//allows us to use multiple tweens at the same time
+            <TweenSequenceItem<double>>[
       // animated size starts at 30, ends at 50, and the both are equally preffered
-      TweenSequenceItem<double>(tween: Tween<double>(begin: 30, end: 50), weight: 50),
-      TweenSequenceItem<double>(tween: Tween<double>(begin: 50, end: 30), weight: 50)
+      TweenSequenceItem<double>(
+          tween: Tween<double>(begin: 30, end: 50), weight: 50),
+      TweenSequenceItem<double>(
+          tween: Tween<double>(begin: 50, end: 30), weight: 50)
     ]).animate(
-        curve); //prevents the error:  A value of type 'TweenSequence<double>' can't be assigned to a variable of type 'Animation<double>'.
+            curve); //prevents the error:  A value of type 'TweenSequence<double>' can't be assigned to a variable of type 'Animation<double>'.
 
     controller.addListener(() {
       print(controller.value);
@@ -83,7 +89,9 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
             size: sizeAnimation.value,
           ),
           onPressed: () {
-            isFav ? controller.reverse() : controller.forward(); //only starts the animation once pressed
+            isFav
+                ? controller.reverse()
+                : controller.forward(); //only starts the animation once pressed
           },
         );
       },

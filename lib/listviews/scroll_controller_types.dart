@@ -20,7 +20,8 @@ class ScrollControllerTypes extends StatelessWidget {
           return Container(
             height: itemHeight,
             alignment: Alignment.center,
-            decoration: BoxDecoration(color: index % 2 == 0 ? Colors.cyan : Colors.teal),
+            decoration: BoxDecoration(
+                color: index % 2 == 0 ? Colors.cyan : Colors.teal),
             child: Text(
               '$index',
               style: const TextStyle(fontSize: 30),
@@ -33,18 +34,22 @@ class ScrollControllerTypes extends StatelessWidget {
         children: [
           FloatingActionButton(
               onPressed: () {
-                scrollController.jumpTo(scrollController.position.minScrollExtent);
+                scrollController
+                    .jumpTo(scrollController.position.minScrollExtent);
               },
               child: const Icon(Icons.arrow_upward_outlined)),
           FloatingActionButton(
               onPressed: () {
-                scrollController.jumpTo(scrollController.position.maxScrollExtent);
+                scrollController
+                    .jumpTo(scrollController.position.maxScrollExtent);
               },
               child: const Icon(Icons.arrow_downward_outlined)),
           FloatingActionButton(
               onPressed: () {
                 scrollController.animateTo(
-                    duration: const Duration(seconds: 1), curve: Curves.easeInOutCirc, scrollController.position.minScrollExtent);
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.easeInOutCirc,
+                    scrollController.position.minScrollExtent);
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -56,7 +61,9 @@ class ScrollControllerTypes extends StatelessWidget {
           FloatingActionButton(
               onPressed: () {
                 scrollController.animateTo(
-                    duration: const Duration(seconds: 1), curve: Curves.decelerate, scrollController.position.maxScrollExtent);
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.decelerate,
+                    scrollController.position.maxScrollExtent);
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -68,7 +75,9 @@ class ScrollControllerTypes extends StatelessWidget {
           FloatingActionButton(
               onPressed: () {
                 scrollController.animateTo(
-                    duration: const Duration(seconds: 1), curve: Curves.easeInOutCirc, scrollController.offset - itemHeight);
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.easeInOutCirc,
+                    scrollController.offset - itemHeight);
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +89,9 @@ class ScrollControllerTypes extends StatelessWidget {
           FloatingActionButton(
               onPressed: () {
                 scrollController.animateTo(
-                    duration: const Duration(seconds: 1), curve: Curves.decelerate, scrollController.offset + itemHeight);
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.decelerate,
+                    scrollController.offset + itemHeight);
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

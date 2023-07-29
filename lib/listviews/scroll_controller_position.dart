@@ -4,7 +4,8 @@ class ScrollControllerPosition extends StatefulWidget {
   const ScrollControllerPosition({super.key});
 
   @override
-  State<ScrollControllerPosition> createState() => _ScrollControllerPositionState();
+  State<ScrollControllerPosition> createState() =>
+      _ScrollControllerPositionState();
 }
 
 class _ScrollControllerPositionState extends State<ScrollControllerPosition> {
@@ -21,9 +22,11 @@ class _ScrollControllerPositionState extends State<ScrollControllerPosition> {
 
   void listenToScrollMovement() {
     String currentLocation = "";
-    if (_scrollController.offset == _scrollController.position.minScrollExtent) {
+    if (_scrollController.offset ==
+        _scrollController.position.minScrollExtent) {
       currentLocation = "at the top";
-    } else if (_scrollController.offset == _scrollController.position.maxScrollExtent) {
+    } else if (_scrollController.offset ==
+        _scrollController.position.maxScrollExtent) {
       currentLocation = "at the bottom";
     } else {
       currentLocation = "in the middle";
@@ -49,7 +52,8 @@ class _ScrollControllerPositionState extends State<ScrollControllerPosition> {
           return Container(
             height: itemHeight,
             alignment: Alignment.center,
-            decoration: BoxDecoration(color: index % 2 == 0 ? Colors.cyan : Colors.teal),
+            decoration: BoxDecoration(
+                color: index % 2 == 0 ? Colors.cyan : Colors.teal),
             child: Text(
               '$index',
               style: const TextStyle(fontSize: 30),

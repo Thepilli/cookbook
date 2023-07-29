@@ -11,7 +11,8 @@ class ScreenTitle extends StatelessWidget {
       //allows the title to appear(fade in via opacity) and posistion itself (padding)
       tween: Tween<double>(begin: 0, end: 1),
       duration: const Duration(milliseconds: 1000),
-      curve: Curves.bounceOut, //can be added to any build it aniamtion to the linearity
+      curve: Curves
+          .bounceOut, //can be added to any build it aniamtion to the linearity
       builder: (context, value, child) {
         return Opacity(
           opacity: value,
@@ -23,7 +24,8 @@ class ScreenTitle extends StatelessWidget {
       },
       child: Text(
         text,
-        style: const TextStyle(fontSize: 36, color: Colors.white, fontWeight: FontWeight.bold),
+        style: const TextStyle(
+            fontSize: 36, color: Colors.white, fontWeight: FontWeight.bold),
       ),
     );
   }

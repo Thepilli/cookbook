@@ -46,7 +46,8 @@ class ListViewCustomBuilder extends StatelessWidget {
           childrenDelegate: SliverChildBuilderDelegate(
         (context, index) {
           return ListTile(
-            leading: CircleAvatar(backgroundImage: AssetImage(users[index].image)),
+            leading:
+                CircleAvatar(backgroundImage: AssetImage(users[index].image)),
             title: Text(users[index].name + '  $index'),
             subtitle: Text(users[index].profession),
           );

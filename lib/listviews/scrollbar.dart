@@ -24,7 +24,11 @@ class ScrollBarWidget extends StatelessWidget {
               alignment: Alignment.center,
               margin: EdgeInsets.all(20),
               height: 200,
-              color: Color.fromARGB(Random().nextInt(255), Random().nextInt(255), Random().nextInt(255), Random().nextInt(255)),
+              color: Color.fromARGB(
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255)),
               child: Text(
                 'item no $index',
                 style: TextStyle(fontSize: 23),

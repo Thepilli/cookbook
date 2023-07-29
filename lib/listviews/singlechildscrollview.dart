@@ -29,7 +29,11 @@ class SingleChildScrollViewWidget extends StatelessWidget {
               margin: EdgeInsets.all(20),
               width: 200,
               height: 200,
-              color: Color.fromARGB(Random().nextInt(255), Random().nextInt(255), Random().nextInt(255), Random().nextInt(255)),
+              color: Color.fromARGB(
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255)),
               child: Text(
                 'item1',
                 style: TextStyle(fontSize: 23),
@@ -40,7 +44,11 @@ class SingleChildScrollViewWidget extends StatelessWidget {
               margin: EdgeInsets.all(20),
               width: 200,
               height: 200,
-              color: Color.fromARGB(Random().nextInt(255), Random().nextInt(255), Random().nextInt(255), Random().nextInt(255)),
+              color: Color.fromARGB(
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255)),
               child: Text(
                 'item2',
                 style: TextStyle(fontSize: 23),
@@ -51,7 +59,11 @@ class SingleChildScrollViewWidget extends StatelessWidget {
               margin: EdgeInsets.all(20),
               width: 200,
               height: 200,
-              color: Color.fromARGB(Random().nextInt(255), Random().nextInt(255), Random().nextInt(255), Random().nextInt(255)),
+              color: Color.fromARGB(
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255)),
               child: Text(
                 'item3',
                 style: TextStyle(fontSize: 23),
@@ -62,7 +74,11 @@ class SingleChildScrollViewWidget extends StatelessWidget {
               margin: EdgeInsets.all(20),
               width: 200,
               height: 200,
-              color: Color.fromARGB(Random().nextInt(255), Random().nextInt(255), Random().nextInt(255), Random().nextInt(255)),
+              color: Color.fromARGB(
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255)),
               child: Text(
                 'item3',
                 style: TextStyle(fontSize: 23),
@@ -73,7 +89,11 @@ class SingleChildScrollViewWidget extends StatelessWidget {
               margin: EdgeInsets.all(20),
               width: 200,
               height: 200,
-              color: Color.fromARGB(Random().nextInt(255), Random().nextInt(255), Random().nextInt(255), Random().nextInt(255)),
+              color: Color.fromARGB(
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255)),
               child: Text(
                 'item3',
                 style: TextStyle(fontSize: 23),
@@ -84,7 +104,11 @@ class SingleChildScrollViewWidget extends StatelessWidget {
               margin: EdgeInsets.all(20),
               width: 200,
               height: 200,
-              color: Color.fromARGB(Random().nextInt(255), Random().nextInt(255), Random().nextInt(255), Random().nextInt(255)),
+              color: Color.fromARGB(
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255),
+                  Random().nextInt(255)),
               child: Text(
                 'item3',
                 style: TextStyle(fontSize: 23),

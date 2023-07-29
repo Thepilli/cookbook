@@ -18,7 +18,10 @@ class _FilterWidgetState extends State<FilterWidget> {
   List _searchResults = [];
 
   getClientStream() async {
-    var data = await FirebaseFirestore.instance.collection('client').orderBy('name').get();
+    var data = await FirebaseFirestore.instance
+        .collection('client')
+        .orderBy('name')
+        .get();
     setState(() {
       _allResults = data.docs;
     });

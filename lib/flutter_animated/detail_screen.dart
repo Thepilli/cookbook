@@ -34,7 +34,10 @@ class Details extends StatelessWidget {
             ListTile(
                 title: Text(
                   trip.title,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.grey[800]),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.grey[800]),
                 ),
                 subtitle: Text(
                   '${trip.nights} night stay for only \$${trip.price}',

@@ -3,7 +3,8 @@ import 'package:cookbook/appstyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-Future<Object?> customSignInDialog(BuildContext context, {required ValueChanged onClosed}) {
+Future<Object?> customSignInDialog(BuildContext context,
+    {required ValueChanged onClosed}) {
   return showGeneralDialog(
     barrierLabel: 'Sign in',
     barrierDismissible: true,

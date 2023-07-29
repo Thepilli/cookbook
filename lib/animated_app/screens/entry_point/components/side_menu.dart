@@ -28,7 +28,8 @@ class _SideMenuState extends State<SideMenu> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const InfoCard(name: 'Jiri Pillar', profession: 'developer wannabe'),
+              const InfoCard(
+                  name: 'Jiri Pillar', profession: 'developer wannabe'),
               Padding(
                 padding: const EdgeInsets.only(left: 24.0, top: 32, bottom: 16),
                 child: Text(
@@ -53,7 +54,9 @@ class _SideMenuState extends State<SideMenu> {
                   },
                   isActive: selectedMenu == menu,
                   riveonInit: (artboard) {
-                    StateMachineController controller = RiveUtils.getRiveInput(artboard, stateMachineName: menu.stateMachineName);
+                    StateMachineController controller = RiveUtils.getRiveInput(
+                        artboard,
+                        stateMachineName: menu.stateMachineName);
                     menu.input = controller.findSMI("active") as SMIBool;
                   },
                 ),
@@ -82,7 +85,9 @@ class _SideMenuState extends State<SideMenu> {
                   },
                   isActive: selectedMenu == menu,
                   riveonInit: (artboard) {
-                    StateMachineController controller = RiveUtils.getRiveInput(artboard, stateMachineName: menu.stateMachineName);
+                    StateMachineController controller = RiveUtils.getRiveInput(
+                        artboard,
+                        stateMachineName: menu.stateMachineName);
                     menu.input = controller.findSMI("active") as SMIBool;
                   },
                 ),

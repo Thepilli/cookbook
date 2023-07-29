@@ -16,7 +16,8 @@ class ListViewSeparated extends StatelessWidget {
           /// creates a logic where every 4th item is an ad separator, otherwise en empty space
           return (index + 4) % 3 == 0
               ? Container(
-                  decoration: BoxDecoration(border: Border.all(color: Colors.black26)),
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.black26)),
                   child: ListTile(
                     title: Text('advertisement'),
                     subtitle: Text('are you interested in women in your area?'),

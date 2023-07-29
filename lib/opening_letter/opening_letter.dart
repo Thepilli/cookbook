@@ -41,7 +41,8 @@ class _OpeningLetterState extends State<OpeningLetter> {
                 height: 180,
                 decoration: BoxDecoration(
                   boxShadow: [
-                    BoxShadow(color: Colors.black.withOpacity(0.4), blurRadius: 30),
+                    BoxShadow(
+                        color: Colors.black.withOpacity(0.4), blurRadius: 30),
                   ],
                   color: Colors.grey.shade200.withOpacity(1),
                   borderRadius: const BorderRadius.vertical(

@@ -15,9 +15,12 @@ class CardItem extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 25),
         height: 220,
         width: width,
-        decoration: BoxDecoration(boxShadow: [
-          BoxShadow(color: Colors.pink.withOpacity(0.4), blurRadius: 30),
-        ], color: color.withOpacity(1), borderRadius: const BorderRadius.all(Radius.circular(30))),
+        decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(color: Colors.pink.withOpacity(0.4), blurRadius: 30),
+            ],
+            color: color.withOpacity(1),
+            borderRadius: const BorderRadius.all(Radius.circular(30))),
         child: const Padding(
           padding: EdgeInsets.all(15.0),
           child: Column(

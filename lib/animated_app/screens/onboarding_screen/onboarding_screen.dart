@@ -73,7 +73,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         children: [
                           Text(
                             'Learn Design & Code',
-                            style: GoogleFonts.poppins(fontSize: 60, fontWeight: FontWeight.w700),
+                            style: GoogleFonts.poppins(
+                                fontSize: 60, fontWeight: FontWeight.w700),
                           ),
                           const SizedBox(height: 16),
                           const Text(

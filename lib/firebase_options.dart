@@ -66,8 +66,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '696259143481',
     projectId: 'my-api-endpoint',
     storageBucket: 'my-api-endpoint.appspot.com',
-    androidClientId: '696259143481-vokbfm8ih351k5tlat8nft0bq1af54oh.apps.googleusercontent.com',
-    iosClientId: '696259143481-kcdbg0q8njnp7re8o3m19qn8isbbi0qd.apps.googleusercontent.com',
+    androidClientId:
+        '696259143481-vokbfm8ih351k5tlat8nft0bq1af54oh.apps.googleusercontent.com',
+    iosClientId:
+        '696259143481-kcdbg0q8njnp7re8o3m19qn8isbbi0qd.apps.googleusercontent.com',
     iosBundleId: 'com.example.cookbook',
   );
 
@@ -77,8 +79,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '696259143481',
     projectId: 'my-api-endpoint',
     storageBucket: 'my-api-endpoint.appspot.com',
-    androidClientId: '696259143481-vokbfm8ih351k5tlat8nft0bq1af54oh.apps.googleusercontent.com',
-    iosClientId: '696259143481-c69bqrog87tddfmevagmg8t11mrcjupc.apps.googleusercontent.com',
+    androidClientId:
+        '696259143481-vokbfm8ih351k5tlat8nft0bq1af54oh.apps.googleusercontent.com',
+    iosClientId:
+        '696259143481-c69bqrog87tddfmevagmg8t11mrcjupc.apps.googleusercontent.com',
     iosBundleId: 'com.example.cookbook.RunnerTests',
   );
 }

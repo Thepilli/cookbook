@@ -52,7 +52,10 @@ List<RiveAsset> bottomNavs = [
 
 List<RiveAsset> sideMenu1 = [
   RiveAsset(
-      title: "Home", src: "assets/animated_app/RiveAssets/icons.riv", artboard: "HOME", stateMachineName: "HOME_interactivity"),
+      title: "Home",
+      src: "assets/animated_app/RiveAssets/icons.riv",
+      artboard: "HOME",
+      stateMachineName: "HOME_interactivity"),
   RiveAsset(
       title: "Search",
       src: "assets/animated_app/RiveAssets/icons.riv",
@@ -64,7 +67,10 @@ List<RiveAsset> sideMenu1 = [
       artboard: "LIKE/STAR",
       stateMachineName: "STAR_Interactivity"),
   RiveAsset(
-      title: "Help", src: "assets/animated_app/RiveAssets/icons.riv", artboard: "CHAT", stateMachineName: "CHAT_Interactivity"),
+      title: "Help",
+      src: "assets/animated_app/RiveAssets/icons.riv",
+      artboard: "CHAT",
+      stateMachineName: "CHAT_Interactivity"),
 ];
 List<RiveAsset> sideMenus2 = [
   RiveAsset(
