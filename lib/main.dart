@@ -1,5 +1,5 @@
-import 'package:cookbook/firebase_counter/firebase_counter.dart';
 import 'package:cookbook/firebase_options.dart';
+import 'package:cookbook/short_google_maps.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
                 errorBorder: defaultInputBorder,
               ),
             ),
-            home: const CounterPage(),
+            home: const GoogleMapsShort(),
           );
         });
   }

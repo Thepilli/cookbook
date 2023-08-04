@@ -2,7 +2,7 @@
 
 import 'dart:math';
 
-import 'package:cookbook/listviews/user.dart';
+import 'package:cookbook/listviews_teacher/user.dart';
 import 'package:flutter/material.dart';
 
 class ListViewBuilder extends StatelessWidget {

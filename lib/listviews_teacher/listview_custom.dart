@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:cookbook/listviews/listview_builder.dart';
-import 'package:cookbook/listviews/user.dart';
+import 'package:cookbook/listviews_teacher/listview_builder.dart';
+import 'package:cookbook/listviews_teacher/user.dart';
 import 'package:flutter/material.dart';
 
 class ListViewCustomList extends StatelessWidget {
