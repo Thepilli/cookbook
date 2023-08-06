@@ -9,7 +9,8 @@ class GoogleMapsShort extends StatefulWidget {
 }
 
 class _GoogleMapsShortState extends State<GoogleMapsShort> {
-  static const CameraPosition _kGooglePlex = CameraPosition(target: LatLng(37, -122), zoom: 14);
+  static const CameraPosition _kGooglePlex =
+      CameraPosition(target: LatLng(37, -122), zoom: 14);
   @override
   Widget build(BuildContext context) {
     return Scaffold(

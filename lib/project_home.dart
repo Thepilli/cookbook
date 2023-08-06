@@ -30,7 +30,9 @@ class ProjectHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.pink,
-        appBar: AppBar(backgroundColor: Colors.transparent, title: const Text('Select the project you want to check')),
+        appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            title: const Text('Select the project you want to check')),
         body: ListView(
           children: [
             Container(

@@ -22,7 +22,8 @@ class _TimelinePackageState extends State<TimelinePackage> {
                 isFirst: true,
                 isLast: false,
                 isPast: true,
-                eventCardChild: Text('ORDER PLACED'), //eventually to be switched for a proper card /w more info
+                eventCardChild: Text(
+                    'ORDER PLACED'), //eventually to be switched for a proper card /w more info
               ),
               //middle tile
               MyTimelineTile(

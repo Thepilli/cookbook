@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -71,18 +74,5 @@ class DefaultFirebaseOptions {
     iosClientId:
         '696259143481-kcdbg0q8njnp7re8o3m19qn8isbbi0qd.apps.googleusercontent.com',
     iosBundleId: 'com.example.cookbook',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAN-11CAG6XrRlDhmmIcUcwPDVKMlngaqM',
-    appId: '1:696259143481:ios:b2f3da8f5f71bd2dfd6ae8',
-    messagingSenderId: '696259143481',
-    projectId: 'my-api-endpoint',
-    storageBucket: 'my-api-endpoint.appspot.com',
-    androidClientId:
-        '696259143481-vokbfm8ih351k5tlat8nft0bq1af54oh.apps.googleusercontent.com',
-    iosClientId:
-        '696259143481-c69bqrog87tddfmevagmg8t11mrcjupc.apps.googleusercontent.com',
-    iosBundleId: 'com.example.cookbook.RunnerTests',
   );
 }
