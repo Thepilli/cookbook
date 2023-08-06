@@ -1,9 +1,8 @@
 import 'package:cookbook/firebase_options.dart';
+import 'package:cookbook/hovering_intro_page/hovering_intro_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'mitch_koko/reordable_listview.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,7 +38,7 @@ class MyApp extends StatelessWidget {
                 errorBorder: defaultInputBorder,
               ),
             ),
-            home: const ReordableListview(),
+            home: const HoveringImage(),
           );
         });
   }
