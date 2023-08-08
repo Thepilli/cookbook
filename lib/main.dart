@@ -1,5 +1,6 @@
+import 'package:cookbook/bloc/counter_page.dart';
+import 'package:cookbook/bloc/counter_page_two.dart';
 import 'package:cookbook/firebase_options.dart';
-import 'package:cookbook/search_with_delegate/search_home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             title: 'Flutter CookBook',
             theme: ThemeData(
-              scaffoldBackgroundColor: Colors.transparent,
+              scaffoldBackgroundColor: const Color(0xFFFED97A),
               primarySwatch: Colors.blue,
               inputDecorationTheme: const InputDecorationTheme(
                 filled: true,
@@ -38,7 +39,10 @@ class MyApp extends StatelessWidget {
                 errorBorder: defaultInputBorder,
               ),
             ),
-            home: const SearchHomePage(),
+            home: const MyHomePage(),
+            routes: {
+              '/pagetwo': ((context) => const CounterPageTwo()),
+            },
           );
         });
   }
