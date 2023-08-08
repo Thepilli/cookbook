@@ -1,5 +1,5 @@
 import 'package:cookbook/firebase_options.dart';
-import 'package:cookbook/hovering_intro_page/hovering_intro_page.dart';
+import 'package:cookbook/search_with_delegate/search_home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
                 errorBorder: defaultInputBorder,
               ),
             ),
-            home: const HoveringImage(),
+            home: const SearchHomePage(),
           );
         });
   }
